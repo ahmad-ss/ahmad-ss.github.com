@@ -32,16 +32,16 @@
                 <ul
                   tabindex="0"
                   class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                  <li><a>Home</a></li>
+                  <li><a class="active" href="/">Home</a></li>
                   <li><a>Portofolio</a></li>
                   <li><a>Contact</a></li>
                 </ul>
               </div>
-              <a class="btn btn-ghost text-xl">Ahmad Setiyanto</a>
+              <a class="btn btn-ghost text-xl" href="/">Ahmad Ayato</a>
             </div>
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1">
-                <li><a>Home</a></li>
+                <li><a class="active" href="/">Home</a></li>
                 <li><a>Portofolio</a></li>
                 <li><a>Contact</a></li>
               </ul>
@@ -74,31 +74,63 @@
                     <p class="mb-5">
                         This is my first web page using tailwindcss and daisyui. I hope you like it. Hope you enjoy it.
                     </p>
-                    <a href="#bio" class="btn btn-primary">Get Started</a>
+                    <a href="#about" class="btn btn-primary">About Me</a>
                 </div>
             </div>
         </div>
         <!-- hero section end -->
-        <!-- hero bio start -->
+        <!-- about me section start -->
+        <div class="hero bg-base-200 min-h-screen" id="about">
+          <div class="hero-content text-center">
+            <div class="max-w-md">
+              <h1 class="text-5xl font-bold">A Little Story About Me</h1>
+              <p class="py-6">
+                Hi, I'm Ahmad Setiyanto. I was born in Grobogan on November 25, 1997, and I've had the 
+                privilege of calling this place my home ever since. I graduated from Dian Nuswantoro 
+                University with a Bachelor of Computer Science in 2021. Over the past two years, 
+                I've gained valuable experience as a web developer. I'm passionate about learning new things 
+                and constantly seeking out fresh experiences to grow both personally and professionally.
+              </p>
+              <a class="btn btn-primary mt-4" href="#bio">
+                Next
+                <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path d="m12 17.586-7.293-7.293-1.414 1.414L12 20.414l8.707-8.707-1.414-1.414L12 17.586z"/><path d="m20.707 5.707-1.414-1.414L12 11.586 4.707 4.293 3.293 5.707 12 14.414l8.707-8.707z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- about me section end -->
+        <div class="divider">//</div>
+        <!-- short bio start -->
         <div class="hero bg-base-200 min-h-screen" id="bio">
             <div class="hero-content flex-col lg:flex-row-reverse">
               <img
                 src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
                 class="max-w-sm rounded-lg shadow-2xl" />
               <div>
-                <h1 class="text-5xl font-bold">Short Bio :</h1>
+                <h2 class="text-5xl font-bold">Short BIO :</h2>
                 <div class="flex w-full pt-2">
-                    <p class="py-6">
+                    <p class="py-6 font-bold">
                         Full Name&nbsp;:&nbsp;Ahmad Setiyanto </br>
-                        Date of Birth&nbsp;:&nbsp;25th November 1997
+                        Date of Birth&nbsp;:&nbsp;25th November 1997 </br>
+                        WhatsApp No.&nbsp;:&nbsp;+62 851-5601-1825 </br>
+                        Citizenship&nbsp;:&nbsp;Indonesia </br>
                     </p>
                         <div class="divider divider-horizontal"></div>
-                    <p class="py-6">
-                        Nick Name : Ahmad / Mamad / Ahmato / Ayato </br>
-                        Latest Education : Bachelor of Informatics Engineering
+                    <p class="py-6 font-bold">
+                        Nick Name&nbsp;:&nbsp;Ahmad / Mamad / Ahmato / Ayato </br>
+                        Latest Education&nbsp;:&nbsp;Bachelor of Informatics Engineering </br>
+                        University&nbsp;:&nbsp;Dian Nuswantoro University </br>
+                        Address&nbsp;:&nbsp;Grobogan, Jawa Tengah, Indonesia </br>
                     </p>
                 </div>
-                <a href="#about" class="btn btn-primary">
+                <a href="#skills" class="btn btn-primary mt-4">
                     Next
                     <svg 
                         xmlns="http://www.w3.org/2000/svg" 
@@ -112,64 +144,113 @@
               </div>
             </div>
         </div>
-        <!-- hero bio end -->
-        <div class="divider">//</div>
-        <!-- about me section start -->
-        <div class="hero bg-base-200 min-h-screen" id="about">
-            <div class="hero-content text-center">
-              <div class="max-w-md">
-                <h1 class="text-5xl font-bold">Hello there</h1>
-                <p class="py-6">
-                  Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                  quasi. In deleniti eaque aut repudiandae et a id nisi.
-                </p>
-                <button class="btn btn-primary">Get Started</button>
-              </div>
-            </div>
-        </div>
-        <!-- about me section end -->
+        <!-- short bio end -->
         <div class="divider">//</div>
         <!-- skills section start -->
-        <div class="hero bg-base-200 min-h-screen">
+        <div class="hero bg-base-200 min-h-screen" id="skills">
             <div class="hero-content text-center">
-              <div class="max-w-md">
-                <h1 class="text-5xl font-bold">Hello there</h1>
-                <p class="py-6">
-                  Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                  quasi. In deleniti eaque aut repudiandae et a id nisi.
-                </p>
-                <button class="btn btn-primary">Get Started</button>
+              <div class="max-w-l">
+                <h1 class="text-5xl font-bold">Skills</h1>
+                <div class="flex w-full flex-col lg:flex-row mt-4 mb-4 text-left">
+                  <div class="mockup-code">
+                    <pre data-prefix="$"><code>PHP Programing</code></pre>
+                    <pre data-prefix="$"><code>Javascript Programing</code></pre>
+                    <pre data-prefix="$"><code>SQL Database</code></pre>
+                  </div>
+                  <div class="divider lg:divider-horizontal"></div>
+                  <div class="mockup-code">
+                    <pre data-prefix="$"><code>Laravel Framework</code></pre>
+                    <pre data-prefix="$"><code>CodeIgniter Framework</code></pre>
+                    <pre data-prefix="$"><code>Bootstrap</code></pre>
+                    <pre data-prefix="$"><code>DaisyUI</code></pre>
+                  </div>
+                  <div class="divider lg:divider-horizontal"></div>
+                  <div class="mockup-code">
+                    <pre data-prefix="$"><code>Microsoft Office</code></pre>
+                    <pre data-prefix="$"><code>MySQL RDMBS</code></pre>
+                  </div>
+                </div>
+                <a href="#experiences" class="btn btn-primary mt-4">
+                  Next
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path d="m12 17.586-7.293-7.293-1.414 1.414L12 20.414l8.707-8.707-1.414-1.414L12 17.586z"/><path d="m20.707 5.707-1.414-1.414L12 11.586 4.707 4.293 3.293 5.707 12 14.414l8.707-8.707z"/>
+                  </svg>
+                </a>
               </div>
             </div>
         </div>
         <!-- skills section end -->
         <div class="divider">//</div>
         <!-- work experience section start -->
-        <div
+        <div id="experiences"
             class="hero min-h-screen"
-            style="background-image: url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp);">
+            style="background-image: url(/work_experience.jpg);">
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-neutral-content text-center">
-                <div class="max-w-md">
-                <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-                <p class="mb-5">
-                    Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                    quasi. In deleniti eaque aut repudiandae et a id nisi.
-                </p>
-                <button class="btn btn-primary">Get Started</button>
+                <div class="max-w-l">
+                <h1 class="mb-5 text-5xl font-bold">Work Experiences</h1>
+                <div class="flex w-full flex-col lg:flex-row mt-4 mb-4 text-left">
+                  <div class="mockup-browser border-base-300 border w-96">
+                    <div class="mockup-browser-toolbar">
+                      <div class="input border-base-300 border">Technical Support</div>
+                    </div>
+                    <div class="border-base-300 flex justify-left border-t px-4 py-16">
+                      Xai Syndicate International<br>
+                      Responsible :<br>
+                        &#8226; Deploy IT Peripherals, such as Laptop, IP Printer, etc to the clients.<br>
+                        &#8226; Provided technical support over the phone, email, and remote desktop.<br>
+                        &#8226; Setting and configures PC or IT peripherals.<br>
+                    </div>
+                  </div>
+                  <div class="divider lg:divider-horizontal"></div>
+                  <div class="mockup-browser border-base-300 border w-96">
+                    <div class="mockup-browser-toolbar">
+                      <div class="input border-base-300 border">Web Developer (Engineer on Site)</div>
+                    </div>
+                    <div class="border-base-300 flex justify-left border-t px-4 py-16">
+                      Varnion Technology Semesta<br>
+                      Responsible :<br>
+                      • Design, Developing, Bug Fix website (PHP, HTML, Javascript, Codeigniter, Laravel).<br>
+                      • Web Administrator (CPanel, HPanel, Wordpress).<br>
+                      • Provided technical support over the phone, email, and remote desktop.<br>
+                      • Company representative, keeping company reputation and make sure that client got the best services.<br>
+                      • System installation and maintenance.<br>
+                      • Diagnosis and troubleshooting of IT issue.<br>
+                      • Installation/Maintenance CCTV, PC, & etc.<br>
+                      • Operator for Videotron, Maxhub, & etc.<br>
+                      • Zoom Operator for company’s events.<br>
+                    </div>
+                  </div>
+                </div>
+                <a href="#contact" class="btn btn-primary mt-4">
+                  Next
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path d="m12 17.586-7.293-7.293-1.414 1.414L12 20.414l8.707-8.707-1.414-1.414L12 17.586z"/><path d="m20.707 5.707-1.414-1.414L12 11.586 4.707 4.293 3.293 5.707 12 14.414l8.707-8.707z"/>
+                  </svg>
+                </a>
                 </div>
             </div>
         </div>
         <!-- work experience section end -->
         <div class="divider">//</div>
         <!-- contact section start -->
-        <div class="hero bg-base-200 min-h-screen">
+        <div class="hero bg-base-200 min-h-screen" id="contact">
             <div class="hero-content flex-col lg:flex-row-reverse">
               <div class="text-center lg:text-left">
-                <h1 class="text-5xl font-bold">Login now!</h1>
+                <h1 class="text-5xl font-bold">Cantact me now!</h1>
                 <p class="py-6">
-                  Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                  quasi. In deleniti eaque aut repudiandae et a id nisi.
+                  To develop your website or you want a web like mine.</br>
+                  You can visit my other work <a href="https://yato.my.id" class="link" target="_blank">Here</a>.
                 </p>
               </div>
               <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
@@ -213,11 +294,11 @@
                   d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path>
               </svg>
               <p class="font-bold">
-                ACME Industries Ltd.
+                Ahmad Setiyanto
                 <br />
-                Providing reliable tech since 1992
+                This website is developed using tailwindcss and daisyui
               </p>
-              <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
+              <!-- <p>Copyright ©  - All right reserved</p> -->
             </aside>
             <nav>
               <div class="grid grid-flow-col gap-4">
@@ -259,28 +340,37 @@
         </footer>
         <!-- footer end -->
         <!-- theme mode changer toast start -->
-        <div class="toast">
+        <div class="toast toast-end">
+            <a href="#" class="btn btn-circle btn-ghost">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="swap-on h-10 w-10 fill-current" 
+                viewBox="0 0 448 512">
+                <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                <path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/>
+              </svg>
+            </a>
+      
             <label class="swap swap-rotate">
-                <!-- this hidden checkbox controls the state -->
-                <input type="checkbox" class="theme-controller" value="light" />
-              
-                <!-- sun icon -->
-                <svg
-                  class="swap-on h-10 w-10 fill-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24">
-                  <path
-                    d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
-                </svg>
-              
-                <!-- moon icon -->
-                <svg
-                  class="swap-off h-10 w-10 fill-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24">
-                  <path
-                    d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
-                </svg>
+              <!-- this hidden checkbox controls the state -->
+              <input type="checkbox" class="theme-controller" value="light" />
+            
+              <!-- sun icon -->
+              <svg
+                class="swap-on h-10 w-10 fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24">
+                <path
+                  d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
+              </svg>
+            
+              <!-- moon icon -->
+              <svg
+                class="swap-off h-10 w-10 fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24">
+                <path
+                  d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
+              </svg>
             </label>
         </div>
         <!-- theme mode changer toast end -->
